@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="380.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.urunEkleController">
+   <children>
+      <VBox layoutX="143.0" layoutY="116.0" prefHeight="200.0" prefWidth="500.0" style="-fx-background-color: #0B0B0B;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="60.0" prefWidth="200.0">
+               <children>
+                  <Label text="Ürün ID:" textFill="#fc7f00">
+                     <HBox.margin>
+                        <Insets left="125.0" top="15.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="urunIDTextfield" style="-fx-background-color: transparent; -fx-border-color: #fc7f00; -fx-border-radius: 15; -fx-text-fill: #fc7f00;">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="200.0">
+               <children>
+                  <Label text="Ürün adı:" textFill="#fc7f00">
+                     <HBox.margin>
+                        <Insets left="120.0" top="15.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="urunAdiTextField" style="-fx-border-color: #fc7f00; -fx-background-color: transparent; -fx-border-radius: 15; -fx-text-fill: #fc7f00;">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="70.0" prefHeight="60.0" prefWidth="200.0">
+               <children>
+                  <Label text="Ürün türü:" textFill="#fc7f00">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="115.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="urunTuruTextField" style="-fx-background-color: transparent; -fx-border-color: #fc7f00; -fx-border-radius: 15; -fx-text-fill: #fc7f00;">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="130.0" prefHeight="60.0" prefWidth="200.0">
+               <children>
+                  <Label text="Alım fiyatı:" textFill="#fc7f00">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="110.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="alimFiyatiTextField" style="-fx-background-color: transparent; -fx-border-color: #fc7f00; -fx-border-radius: 15; -fx-text-fill: #fc7f00;">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="190.0" prefHeight="60.0" prefWidth="200.0">
+               <children>
+                  <Label text="Satış fiyatı:" textFill="#fc7f00">
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="110.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="satisFiyatiTextField" style="-fx-background-color: transparent; -fx-border-color: fc7f00; -fx-border-radius: 15; -fx-text-fill: #fc7f00;">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="250.0" prefHeight="80.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="iptalEtButton" mnemonicParsing="false" onAction="#setButtons" style="-fx-background-color: transparent; -fx-border-color: #FC7F00; -fx-border-radius: 15;" text="Iptal et" textFill="#fc7f00">
+                     <HBox.margin>
+                        <Insets left="50.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="ekleButton" layoutX="60.0" layoutY="30.0" mnemonicParsing="false" onAction="#setButtons" style="-fx-background-color: transparent; -fx-border-color: #FC7F00; -fx-border-radius: 15;" text="Ekle" textFill="#fc7f00">
+                     <HBox.margin>
+                        <Insets left="250.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

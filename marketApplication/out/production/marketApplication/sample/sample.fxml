@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #232323;">
+         <children>
+            <VBox prefHeight="300.0" prefWidth="100.0" style="-fx-background-color: #0B0B0B;" AnchorPane.bottomAnchor="500.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox prefHeight="300.0">
+                     <children>
+                        <Label prefWidth="190.0" style="-fx-background-color: transparent;" text="Market uygulaması" textFill="#fc7f00">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="100.0" top="125.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="yenileButton" mnemonicParsing="false" onAction="#setButtons" prefHeight="75.0" prefWidth="100.0" style="-fx-background-color: #FC7F00; -fx-background-radius: 25;" text="Yenile">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="425.0" top="175.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="urunEkleButton" mnemonicParsing="false" onAction="#setButtons" prefHeight="75.0" prefWidth="100.0" style="-fx-background-color: #FC7F00; -fx-background-radius: 25;" text="Ürün ekle">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" top="175.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="barkodOkuyucuButton" mnemonicParsing="false" onAction="#setButtons" prefHeight="75.0" style="-fx-background-color: #FC7F00; -fx-background-radius: 25;" text="Barkod okuyucu">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" top="175.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="kapatButton" mnemonicParsing="false" onAction="#setButtons" prefHeight="75.0" prefWidth="100.0" style="-fx-background-color: #FC7F00; -fx-background-radius: 25;" text="Kapat">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" top="175.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <TableView fx:id="tableView" layoutX="300.0" layoutY="300.0" prefHeight="500.0" prefWidth="741.0" stylesheets="@tableView.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="300.0">
+              <columns>
+                <TableColumn fx:id="urunIDColumn" minWidth="-1.0" prefWidth="136.0" style="-fx-background-color: #232323; -fx-border-color: #232323;" text="Ürün ID" />
+                  <TableColumn fx:id="urunAdiColumn" minWidth="-1.0" prefWidth="136.0" style="-fx-background-color: #232323; -fx-border-color: #232323;" text="Ürün adı" />
+                  <TableColumn fx:id="urunTuruColumn" minWidth="-1.0" prefWidth="136.0" style="-fx-background-color: #232323; -fx-border-color: #232323;" text="Ürün türü" />
+                  <TableColumn fx:id="alimFiyatiColumn" minWidth="-1.0" prefWidth="136.0" style="-fx-background-color: #232323; -fx-border-color: #232323;" text="Alım fiyatı" />
+                  <TableColumn fx:id="satisFiyatiColumn" minWidth="-1.0" prefWidth="136.0" style="-fx-background-color: #232323; -fx-border-color: #232323;" text="Satış fiyatı" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
